@@ -1,4 +1,0 @@
-2021-08-29 17:59:23,544|tests.conftest|INFO - Start: tests/test_002_get_member.py::TestGetMember::test_060_get_member
-2021-08-29 17:59:23,548|session.httpsession|DEBUG - Building URL
-2021-08-29 17:59:23,550|session.httpsession|DEBUG - url : https://qanat-quotes-public.staging.zopa.com/api/member
-2021-08-29 17:59:23,551|session.httpsession|DEBUG - Executing Get requests
