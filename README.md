@@ -42,19 +42,19 @@ pip install -r requirements.txt
 ├───config
 ├───log
 │    └───2021-08-29.19-49-23
-│				├─────────test_001_create_member
-│				│				├───TestCreateMember
-│   			│				└───TestCreateMemberForNegativeTests				
-│				├─────────test_002_get_member
-│				│				└───TestGetMember
-│				├─────────test_003_generate_quotation
-│				│				└───TestCreateQuotation
-│				└─────────main.log
+│		├─────────test_001_create_member
+│		│		├───TestCreateMember
+│   		│		└───TestCreateMemberForNegativeTests				
+│		├─────────test_002_get_member
+│		│		└───TestGetMember
+│		├─────────test_003_generate_quotation
+│		│		└───TestCreateQuotation
+│		└─────────main.log
 ├───results
 │     ├───html 
-│	  │	   └───index.html
+│	   └───index.html
 │     └───junitxml
-│		   └───junit.xml
+│	   └───junit.xml
 ├───session
 │      └───httpsession.py
 ├───tests
