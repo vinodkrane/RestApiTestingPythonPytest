@@ -1,0 +1,5 @@
+2021-08-29 17:13:10,977|tests.conftest|INFO - Start: tests/test_001_create_member.py::TestCreateMemberForNegativeTests::test_030_create_member_with_missing_address
+2021-08-29 17:13:10,979|session.httpsession|DEBUG - Building URL
+2021-08-29 17:13:10,981|session.httpsession|DEBUG - url : https://qanat-quotes-public.staging.zopa.com/api/member
+2021-08-29 17:13:10,982|session.httpsession|DEBUG - Executing POST requests
+2021-08-29 17:13:11,838|tests.test_001_create_member|DEBUG - resp.json={'errors': {'address.town': "'town' is a required property"}, 'message': 'Input payload validation failed'}

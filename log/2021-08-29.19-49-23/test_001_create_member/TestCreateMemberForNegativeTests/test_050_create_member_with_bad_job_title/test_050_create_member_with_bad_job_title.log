@@ -1,0 +1,5 @@
+2021-08-29 19:49:26,907|tests.conftest|INFO - Start: tests/test_001_create_member.py::TestCreateMemberForNegativeTests::test_050_create_member_with_bad_job_title
+2021-08-29 19:49:26,908|session.httpsession|DEBUG - Building URL
+2021-08-29 19:49:26,908|session.httpsession|DEBUG - url : https://qanat-quotes-public.staging.zopa.com/api/member
+2021-08-29 19:49:26,908|session.httpsession|DEBUG - Executing POST requests
+2021-08-29 19:49:27,538|tests.test_001_create_member|DEBUG - resp.json={'message': 'jobTitle must be <= 20 characters'}

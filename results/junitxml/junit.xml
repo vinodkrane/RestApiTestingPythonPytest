@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="4.786" timestamp="2021-08-29T19:49:42.824589" hostname="PUNE-VRANE"><testcase classname="tests.test_001_create_member.TestCreateMember" name="test_010_create_member" time="0.671" /><testcase classname="tests.test_002_get_member.TestCreateMember" name="test_010_create_member" time="0.683" /><testcase classname="tests.test_002_get_member.TestGetMember" name="test_060_get_member" time="0.904"><failure message="AssertionError: MemberId is not matched!&#10;assert None == 'd5766ff6-372...-23541fd984a4'&#10;  +None&#10;  -'d5766ff6-372c-4fcb-a6de-23541fd984a4'">self = &lt;tests.test_002_get_member.TestGetMember object at 0x0000025526328EE0&gt;
+
+    @pytest.mark.smoke
+    @pytest.mark.regression
+    def test_060_get_member(self):
+        """Return a member by member_id."""
+        query_params = {'memberId': TestCreateMember.get_member_id()}
+        res = self.request.get_api('/api/member', query_params)
+        res_body = res.json()
+    
+        # Validate status code. memberid, response headers
+        assert res.status_code == 200, "Result not found!"
+&gt;       assert res_body['memberId'] == TestCreateMember.get_member_id(), "MemberId is not matched!"
+E       AssertionError: MemberId is not matched!
+E       assert None == 'd5766ff6-372...-23541fd984a4'
+E         +None
+E         -'d5766ff6-372c-4fcb-a6de-23541fd984a4'
+
+tests\test_002_get_member.py:33: AssertionError</failure></testcase><testcase classname="tests.test_003_generate_quotation.TestCreateMember" name="test_010_create_member" time="0.678" /><testcase classname="tests.test_003_generate_quotation.TestCreateQuotation" name="test_080_create_a_quote_with_loan_amount_1000" time="1.066"><failure message="AssertionError: Create quote is failed!&#10;assert 400 == 200&#10;  +400&#10;  -200">self = &lt;tests.test_003_generate_quotation.TestCreateQuotation object at 0x000002552638A160&gt;
+
+    @pytest.mark.smoke
+    @pytest.mark.regression
+    def test_080_create_a_quote_with_loan_amount_1000(self):
+        """Return true if quote is created for loan amount 1000."""
+        payload = {
+          "currentSalary": 30000,
+          "amountToBorrow": 1000,
+          "termLength": 24
+        }
+    
+        LOG.debug('memberId=%r', TestCreateMember.get_member_id())
+        query_params = {'memberId': TestCreateMember.get_member_id()}
+        response = self.request.post_api('/api/quote', payload, query_params)
+    
+        # Validate status code and response headers
+&gt;       assert response.status_code == 200, "Create quote is failed!"
+E       AssertionError: Create quote is failed!
+E       assert 400 == 200
+E         +400
+E         -200
+
+tests\test_003_generate_quotation.py:36: AssertionError</failure></testcase></testsuite></testsuites>

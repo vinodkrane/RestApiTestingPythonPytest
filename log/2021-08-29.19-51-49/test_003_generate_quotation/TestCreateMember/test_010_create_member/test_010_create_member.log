@@ -1,0 +1,6 @@
+2021-08-29 19:51:56,225|tests.conftest|INFO - Start: tests/test_003_generate_quotation.py::TestCreateMember::test_010_create_member
+2021-08-29 19:51:56,229|session.httpsession|DEBUG - Building URL
+2021-08-29 19:51:56,231|session.httpsession|DEBUG - url : https://qanat-quotes-public.staging.zopa.com/api/member
+2021-08-29 19:51:56,232|session.httpsession|DEBUG - Executing POST requests
+2021-08-29 19:51:56,917|tests.test_001_create_member|DEBUG - resp.json={'memberId': '29fba3f6-f698-4087-82ca-1a58314a95ec', 'firstName': 'Tony', 'lastName': 'Tester', 'address': {'firstLine': '47-49 Cottons Centre', 'town': 'London', 'postCode': 'SE1 2QG'}, 'emailAddress': 'tony.tester@zopa.com', 'jobTitle': 'Tester/Breaker', 'memberFullName': 'Tony Tester'}
+2021-08-29 19:51:56,920|tests.test_001_create_member|DEBUG - Member_id='29fba3f6-f698-4087-82ca-1a58314a95ec'
