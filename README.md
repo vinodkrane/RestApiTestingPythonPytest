@@ -2,7 +2,6 @@
 ## _Vinod Rane_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-[![Build Status - GitHub](https://github.com/4oh4/pytesting/workflows/pytesting/badge.svg)](https://github.com/4OH4/pytesting/actions?query=workflow%3Apytesting)
 
 This is a sample Rest API test solution for Zopa Testing challenge. Tests are written using a combination of Pytest, Python.
 
