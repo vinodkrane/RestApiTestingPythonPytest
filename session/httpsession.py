@@ -47,7 +47,6 @@ class HttpRequestExecutor:
             :param body: JSON payload
             :param params: Query parameters
 
-
         Returns:
             Response: Response to the request
         """
