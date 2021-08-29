@@ -5,7 +5,6 @@
 
 This is a sample Rest API test solution for Zopa Testing challenge. Tests are written using a combination of Pytest, Python.
 
-
 ## Framework Specifications
 1. The test design is based on the concept of AAA design pattern (Arrange Act Assert).
 2. Simple templating of HTTP request bodies, URLs, and validators, with user variables
@@ -16,24 +15,6 @@ This is a sample Rest API test solution for Zopa Testing challenge. Tests are wr
 6. You can run certain set of tests by marking the tests e.g. smoke, regression
 7. Framework generates comprehensive logging and html, junit xml reports.  
 8. Pytest generated Junit XML result files can be processed by Jenkins with the JUnit plugin to display results of the tests.
-
-
-## Requirements
-Python 3.8 and the following packages (all available via pip):
-1. pytest
-2. pytest-cov
-3. jsonpath_rw
-4. pylint
-5. nose
-6. requests
-7. jsonschema
-8. pytest-html
-
-Or install via the requirements.txt file after cloning the project:
-```sh
-pip install -r requirements.txt
-```
-
 
 ## Project structure
 
@@ -50,7 +31,7 @@ pip install -r requirements.txt
 │		│		└───TestCreateQuotation
 │		└─────────main.log
 ├───results
-│     ├───html 
+│     └───html 
 │	   └───index.html
 │     └───junitxml
 │	   └───junit.xml
@@ -61,31 +42,42 @@ pip install -r requirements.txt
 │   ├───test_001_create_member.py  
 │   ├───test_002_get_member.py       
 │   └───test_003_generate_quotation.py
-├───venv
 └───requirement.txt			  
 ```
 
 1. config - Read Configurations from JSON files
-2. log - Test logs
-3. results - Test execution results
-4. session - The client sends HTTP request
-5. tests - Unit tests
-6. venv - Virtual environments
+2. log - Test execution logs.
+3. results - Test execution results. (HTML, junitxml)
+4. session - The client to send HTTP requests.
+5. tests - Unit tests set.
 
+## Requirements
+Python 3.8 and the following packages (all available via pip):
+1. pytest
+2. pytest-cov
+3. jsonpath_rw
+4. pylint
+5. requests
+6. jsonschema
+7. pytest-html
+
+Or install via requirements.txt file after cloning the project:
+```sh
+pip install -r requirements.txt
+```
 
 ## Getting Started
 1. git clone https://github.com/vinodkrane/RestApiTestingPythonPytest.git
 2. cd RestApiTestingPythonPytest
 3. pip install -r requirements.txt
 
-
 ## Running test
 1. cd $project_directory
-2. Open command prompt / terminal
-3. Run tests using following command
+2. Open command prompt or terminal.
+3. Run tests using following command.
     ```sh
 	Run all Tests
-    pytest -v --junitxml=results\junitxml\junit.xml --html=results\html\report.html
+        pytest -v --junitxml=results\junitxml\junit.xml --html=results\html\report.html
 	
 	Run tests in specific module
 	pytest -v --junitxml=results\junitxml\junit.xml --html=results\html\report.html tests/test_001_create_member.py
@@ -100,16 +92,15 @@ pip install -r requirements.txt
 	pytest --cov=src tests
     ```
 
-
 ## Results
 1. Results can be viewed on console.
 2. HTML reports are recorded at RestApiTestingPythonPytest/results/html/
 3. junitxml reports are recorded at RestApiTestingPythonPytest/results/junitxml/
 
 ## Troubleshooting failures
-1. Check the errors on console.
-2. Check the logs generated at $project_home/log directory
-
+1. Check the failures/warnings on console.
+2. Check the logs generated at $project_home/log directory.
+3. Debug the code.
 
 ## Tests automated
 Create Member
@@ -132,7 +123,6 @@ Create Quotation
 6. Return false if quote is created for loan amount -5000.
 7. Return false if quote is created for non existing member.
 
-
 ## Application under test
 A site for tracking the location of and getting fly-over notifications for the International Space Station.
 https://qanat-quotes-public.staging.zopa.com/api/docs
@@ -148,4 +138,3 @@ https://qanat-quotes-public.staging.zopa.com/api/docs
 1. Python - for writing python code https://docs.python.org/3.8/
 2. Python Requests Module - for write RESTful APIs tests( https://docs.python-requests.org/en/master/)
 3. Coverage - for code coverage https://pypi.org/project/coverage/
-
