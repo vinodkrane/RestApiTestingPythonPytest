@@ -15,7 +15,7 @@ This is a sample Rest API test solution for Zopa Testing challenge. Tests are wr
 5. You can mark test functions that you expect to fail so framework can deal with them accordingly.
 6. You can run certain set of tests by marking the tests e.g. smoke, regression
 7. Framework generates comprehensive logging and html, junit xml reports.  
-8. Junit XML files can be processed by Jenkins with the JUnit plugin to display results of the tests.
+8. Pytest generated Junit XML result files can be processed by Jenkins with the JUnit plugin to display results of the tests.
 
 
 ## Requirements
