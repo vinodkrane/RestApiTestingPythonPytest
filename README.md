@@ -1,4 +1,4 @@
-# Java based RestApi Testing Framework - BDD
+# Python based RestApi Testing Framework - Pytest
 ## _Vinod Rane_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
