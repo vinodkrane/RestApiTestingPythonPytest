@@ -1,5 +1,0 @@
-2021-08-29 17:54:11,752|tests.conftest|INFO - Start: tests/test_001_create_member.py::TestCreateMemberForNegativeTests::test_040_create_member_with_missing_emailAddress
-2021-08-29 17:54:11,754|session.httpsession|DEBUG - Building URL
-2021-08-29 17:54:11,755|session.httpsession|DEBUG - url : https://qanat-quotes-public.staging.zopa.com/api/member
-2021-08-29 17:54:11,756|session.httpsession|DEBUG - Executing POST requests
-2021-08-29 17:54:12,474|tests.test_001_create_member|DEBUG - resp.json={'errors': {'emailAddress': "'emailAddress' is a required property"}, 'message': 'Input payload validation failed'}

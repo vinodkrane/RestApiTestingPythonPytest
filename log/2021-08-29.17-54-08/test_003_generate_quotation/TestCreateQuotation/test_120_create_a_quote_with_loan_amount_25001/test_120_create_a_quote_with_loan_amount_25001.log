@@ -1,5 +1,0 @@
-2021-08-29 17:54:20,820|tests.conftest|INFO - Start: tests/test_003_generate_quotation.py::TestCreateQuotation::test_120_create_a_quote_with_loan_amount_25001
-2021-08-29 17:54:20,823|tests.test_003_generate_quotation|DEBUG - memberId='0245d166-0fd1-4833-a223-df41370babee'
-2021-08-29 17:54:20,824|session.httpsession|DEBUG - Building URL
-2021-08-29 17:54:20,826|session.httpsession|DEBUG - url : https://qanat-quotes-public.staging.zopa.com/api/quote
-2021-08-29 17:54:20,827|session.httpsession|DEBUG - Executing POST requests
