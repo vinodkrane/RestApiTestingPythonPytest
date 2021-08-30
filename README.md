@@ -20,6 +20,10 @@ This is a sample Rest API test solution for Zopa Testing challenge. Tests are wr
 
 ```sh
 ├───config
+│   ├───config_loader.py
+│   ├───schema.py 
+│   └───setting.json
+│
 ├───log
 │    └───2021-08-29.19-49-23
 │		├─────────test_001_create_member
